@@ -1,14 +1,213 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Hello World</title>
-  <link href='/style.css' rel='stylesheet'>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARTS OVERSIGHT | 문화예술 전문 경영 컨설턴트</title>
+    <meta
+        name="description"
+        content="문화예술 전문 경영 컨설턴트의 인사이트 아카이브와 문화예술기획, 독서모임, 워크숍 스터디 모집 및 신청 플랫폼"
+    >
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello, world!</h1>
-  <button onclick="console.log('hello');">Press me</button>
-  <script defer type="text/javascript" src="/main.js"></script>
+    <header class="hero" id="top">
+        <div class="hero__nav">
+            <a class="brand" href="#top">ARTS OVERSIGHT</a>
+            <nav>
+                <ul class="nav-list">
+                    <li><a href="#insights">인사이트</a></li>
+                    <li><a href="#studies">스터디</a></li>
+                    <li><a href="#application">신청</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="hero__content">
+            <div class="hero__copy">
+                <p class="eyebrow">Culture, Strategy, Community</p>
+                <h1>문화예술의 실행력을 설계하는 전문 경영 인사이트 플랫폼</h1>
+                <p class="hero__description">
+                    현장의 언어와 전략의 언어를 함께 다루는 문화예술전문경영컨설턴트로서,
+                    기획과 운영, 커뮤니티와 학습이 연결되는 아카이브를 구축합니다.
+                </p>
+                <div class="hero__actions">
+                    <a class="button button--primary" href="#studies">스터디 모집 보기</a>
+                    <a class="button button--ghost" href="#insights">인사이트 읽기</a>
+                </div>
+            </div>
+
+            <aside class="hero__panel">
+                <p class="panel__label">Consulting Focus</p>
+                <ul class="hero__metrics">
+                    <li>
+                        <strong>03</strong>
+                        <span>운영 중인 모집 프로그램</span>
+                    </li>
+                    <li>
+                        <strong>12+</strong>
+                        <span>축적된 인사이트 아티클 주제</span>
+                    </li>
+                    <li>
+                        <strong>1:1</strong>
+                        <span>참여 목적에 맞춘 스터디 적합도 확인</span>
+                    </li>
+                </ul>
+            </aside>
+        </div>
+    </header>
+
+    <main>
+        <section class="section section--intro">
+            <div class="section-heading">
+                <p class="eyebrow">What This Platform Does</p>
+                <h2>인사이트 아카이브와 학습 커뮤니티를 한 곳에</h2>
+            </div>
+            <div class="feature-grid">
+                <article class="feature-card">
+                    <h3>블로그형 인사이트 게시</h3>
+                    <p>문화예술기획, 예술경영, 관객개발, 운영전략에 대한 통찰을 주제별로 정리합니다.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>스터디 모집 운영</h3>
+                    <p>문화예술기획 스터디와 독서모임, 워크숍 모집 공고를 일정과 대상 중심으로 안내합니다.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>신청자 정보 수집</h3>
+                    <p>이름, 나이, 성별, 휴대전화번호, 메일주소, 관심분야, 지향점을 체계적으로 수집합니다.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section" id="insights">
+            <div class="section-heading">
+                <p class="eyebrow">Insight Archive</p>
+                <h2>현장을 해석하고 다음 실행을 제안하는 글</h2>
+                <p>짧은 코멘트가 아닌, 기획과 운영의 판단 기준이 남는 글을 축적합니다.</p>
+            </div>
+            <div class="insight-grid" id="blog-posts"></div>
+        </section>
+
+        <section class="section section--accent" id="studies">
+            <div class="section-heading">
+                <p class="eyebrow">Study Programs</p>
+                <h2>모집 중인 스터디와 프로그램</h2>
+                <p>문화예술기획, 예술경영 독서모임, 전시 기획 워크숍 등 목적 중심의 학습 프로그램입니다.</p>
+            </div>
+            <div class="study-grid" id="study-groups"></div>
+        </section>
+
+        <section class="section section--application" id="application">
+            <div class="section-heading">
+                <p class="eyebrow">Application Desk</p>
+                <h2>스터디 신청 흐름</h2>
+                <p>원하는 프로그램을 선택한 뒤 신청서를 제출하면 브라우저에 임시 저장되어 운영 검토가 가능합니다.</p>
+            </div>
+
+            <div class="application-layout">
+                <article class="application-guide">
+                    <h3>수집 항목</h3>
+                    <ul class="check-list">
+                        <li>이름</li>
+                        <li>나이</li>
+                        <li>성별</li>
+                        <li>휴대전화번호</li>
+                        <li>메일주소</li>
+                        <li>관심분야</li>
+                        <li>지향점</li>
+                    </ul>
+                    <p class="application-guide__note">
+                        실제 운영 단계에서는 서버 또는 스프레드시트 연동으로 확장할 수 있도록 프런트 구조를 정리했습니다.
+                    </p>
+                </article>
+
+                <article class="application-summary">
+                    <div class="summary-head">
+                        <div>
+                            <p class="summary-head__label">현재 저장된 신청</p>
+                            <h3 id="application-count">0건</h3>
+                        </div>
+                        <button class="button button--small button--ghost" id="clear-applications" type="button">
+                            전체 삭제
+                        </button>
+                    </div>
+                    <div class="application-list" id="application-list">
+                        <p class="empty-state">아직 접수된 신청이 없습니다.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>ARTS OVERSIGHT © 2026. 문화예술전문경영컨설턴트 인사이트 플랫폼.</p>
+    </footer>
+
+    <dialog class="modal" id="application-modal">
+        <form class="application-form" id="study-application-form" method="dialog" novalidate>
+            <div class="modal__header">
+                <div>
+                    <p class="eyebrow">Study Application</p>
+                    <h3 id="selected-study-title">스터디 신청</h3>
+                </div>
+                <button class="modal__close" id="close-modal" type="button" aria-label="닫기">×</button>
+            </div>
+
+            <input id="selected-study-input" name="studyTitle" type="hidden">
+
+            <div class="form-grid">
+                <label>
+                    이름
+                    <input id="name" name="name" type="text" placeholder="홍길동" required>
+                </label>
+                <label>
+                    나이
+                    <input id="age" name="age" type="number" min="1" max="120" placeholder="29" required>
+                </label>
+                <label>
+                    성별
+                    <select id="gender" name="gender" required>
+                        <option value="">선택해주세요</option>
+                        <option value="여성">여성</option>
+                        <option value="남성">남성</option>
+                        <option value="논바이너리">논바이너리</option>
+                        <option value="응답하지 않음">응답하지 않음</option>
+                    </select>
+                </label>
+                <label>
+                    휴대전화번호
+                    <input id="phone" name="phone" type="tel" placeholder="010-1234-5678" required>
+                </label>
+                <label>
+                    메일주소
+                    <input id="email" name="email" type="email" placeholder="name@example.com" required>
+                </label>
+                <label>
+                    관심분야
+                    <input id="interest" name="interest" type="text" placeholder="예술경영, 관객개발, 전시기획" required>
+                </label>
+            </div>
+
+            <label class="textarea-field">
+                지향점
+                <textarea
+                    id="goal"
+                    name="goal"
+                    rows="5"
+                    placeholder="이 스터디를 통해 얻고 싶은 변화, 기획하고 싶은 프로젝트, 커리어 방향 등을 적어주세요."
+                    required
+                ></textarea>
+            </label>
+
+            <p class="form-message" id="form-message" aria-live="polite"></p>
+
+            <div class="modal__actions">
+                <button class="button button--ghost" id="cancel-modal" type="button">취소</button>
+                <button class="button button--primary" type="submit">신청서 제출</button>
+            </div>
+        </form>
+    </dialog>
+
+    <script type="module" src="main.js"></script>
 </body>
 </html>
